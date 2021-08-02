@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  .headingStyle {text-align: center;color: darkblue;background-color:powderblue;}
+  .pStatStype {text-align: left;color: darkblue}
+  body, html {height: 100%;} 
+  
+  .parallax_1 {
+    /* The image used */
+    background-image: url('/static/images/Ahri.jpeg'); /* Aatrox always place images in flask directory structure*/
+    /* Full height */
+    height: 50%; 
+    background-attachment: fixed;
+  }
+  .parallax_2 {
+    /* The image used */
+    background-image: url('/static/images/Aatrox.jpeg'); /* Akali always place images in flask directory structure*/
+    /* Full height */
+    height: 50%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .parallax_3 {
+    /* The image used */
+    background-image: url('/static/images/Akali.jpeg'); /* Akshan always place images in flask directory structure*/
+    /* Full height */
+    height: 50%; 
+    background-attachment: fixed;
+  }
+  .parallax_4 {
+    /* The image used */
+    background-image: url('/static/images/Akshan.jpeg'); /*  always place images in flask directory structure*/
+    /* Full height */
+    height: 50%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+
+</style>
+    <head>
+        <h1 class="headingStyle">ULLR.GG</h1>
+    </head>
+    <body>
+
+        <table style="text-align: center;color: darkblue;background-color:powderblue; width:100%;border: 0px solid blue;">
+
+            <tr>
+                <th style="text-align:left; color: darkblue; background-color:powderblue; border: 0px solid blue; width: 40%;">
+                   
+                        <h2 style="text-align: center; color:crimson">  Match Statistics </h2> 
+                  
+                    <table style="text-align:left; width: 80%;" >
+
+                         
+                        <tr>
+                            <th>DateTime</th>
+                            <th>Duration</th>
+                            <th>K/D/A</th>
+                            <th>Minion</th>
+                            <th>Gold</th>
+                            
+                        </tr>
+                        <tr style="text-align: left;">
+                            <td>{{foodtanariDate|safe}}</td>
+                            <td>{{foodtanariDuration|safe}}</td>
+                            <td>{{kda|safe}}</td>
+                            <td>{{foodtanariMinions|safe}}</td>
+                            <td>{{foodtanariGoldEarned|safe}}</td>
+                        </tr>
+                            
+                    </table>
+                        
+                </th>
+                <th style="text-align: left;color: darkblue;background-color:powderblue;border: 0px solid blue;width: 40%;">
+                    
+                    <h2 style="text-align: center; color:crimson"> Overall Statistics</h2>
+                   
+                    <table style="text-align: left; width: 80%;">
+                        <tr>
+                            
+                            <th>Duration</th>
+                            <th>K/D/A</th>
+                            <th>Minion</th>
+                            <th>Gold</th>
+                        </tr>
+                        <tr style="text-align: left;">
+                            
+                            <td>{{overall_foodtanariDuration|safe}}</td>
+                            <td>{{overall_kda|safe}}</td>
+                            <td>{{overall_foodtanariMinions|safe}}</td>
+                            <td>{{overall_foodtanariGoldEarned|safe}}</td>
+                        </tr>
+                                            
+                    </table>
+                </th>
+            </tr>
+            
+        </table>
+        
+        <table style="text-align:left ;color: darkblue;background-color:powderblue; width:100%;">
+            <tr>
+                <th style="text-align:left; color: darkblue;background-color:powderblue; width: 50%;">
+                    <table>
+                        
+                        <tr><td>{{killsStats|safe}}</td></tr>
+                        <tr><td>{{deathsStats|safe}}</td></tr>
+                        <tr><td>{{assistsStats|safe}}</td></tr>
+                        <tr><td>{{minionStats|safe}}</td></tr>
+                        <tr><td>{{goldStats|safe}}</td></tr>
+                        <tr><td>{{matchResult|safe}}</td></tr>
+
+                    </table>
+                </th>
+                <th style="text-align:left;color: darkblue;background-color:powderblue; width: 50%;">
+                    <table>
+                       
+                        <tr><td>{{overall_killsStats|safe}}</td></tr>
+                        <tr><td>{{overall_deathsStats|safe}}</td></tr>
+                        <tr><td>{{overall_assistsStats|safe}}</td></tr>
+                        <tr><td>{{overall_minionStats|safe}}</td></tr>
+                        <tr><td>{{overall_goldStats|safe}}</td></tr>
+
+                    </table>
+                </th>
+            </tr>
+        </table>
+       
+
+        <table style="width:100%">
+            <tr>
+                
+                    <h2 style="border: 1px solid black;text-align: center;">Team Performance</h2>
+                    <td></td>
+                
+            </tr>
+
+            <tr>
+                <td style="width:20%"></td>
+                <td style="width:40%; align-content: center;">{{plt_goldEarned | safe}}</td>
+                <td style="width:40%">{{plt_pieGold| safe}}</td>
+            </tr>
+        </table>
+        <div class="parallax_1"></div>
+        
+
+        <table style="width:100%">
+            <tr>
+                <td style="width:20%"></td>
+                <td style="width:40%; align-content: center;">{{plt_tKills | safe}}</td>
+                <td style="width:40%">{{plt_pieKills| safe}}</td>
+            </tr>
+        </table>
+        <div class="parallax_2"></div>
+
+        <table style="width:100%">
+            <tr>
+                <td style="width:20%"></td>
+                <td style="width:40%; align-content: center;">{{plt_tDeaths | safe}}</td>
+                <td style="width:40%">{{plt_pieDeaths| safe}}</td>
+            </tr>
+        </table>
+
+        <div class="parallax_3"></div>
+
+        <table style="width:100%">
+            <tr>
+                <td style="width:20%"></td>
+                <td style="width:40%; align-content: center;">{{plt_tAssists | safe}}</td>
+                <td style="width:40%">{{plt_pieAssists| safe}}</td>
+            </tr>
+        </table>
+        <div class="parallax_4"></div>
+        <table style="width:100%">
+            <tr>
+                <td style="width:20%"></td>
+                <td style="width:40%; align-content: center;">{{plt_tMinion | safe}}</td>
+                <td style="width:40%">{{plt_pieMinion| safe}}</td>
+            </tr>
+
+
+        </table>
+
+    </body>
+</html>
