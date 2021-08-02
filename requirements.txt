@@ -4,7 +4,6 @@ alembic==1.6.2
 alpaca-trade-api==0.52.0
 anaconda-client==1.7.2
 anaconda-navigator==1.9.12
-anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
 aniso8601==9.0.1
 apache-airflow==2.0.2
 apache-airflow-providers-ftp==1.1.0
