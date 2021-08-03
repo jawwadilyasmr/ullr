@@ -39,10 +39,6 @@ jupyter-core==4.6.3
 jupyterlab==2.2.6
 lazy-object-proxy==1.4.3
 libarchive-c==2.9
-locket==0.2.0
-nb-conda==2.2.1
-numexpr==2.7.1
-packaging==20.4
 pandas==0.24.2
 plotly==4.13.0
 pluggy==0.13.1
