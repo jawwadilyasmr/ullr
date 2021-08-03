@@ -195,7 +195,7 @@ assists_stats   = firstMatch['assists'].describe()
 gold_stats      = firstMatch['Gold Earned'].describe()
 minons_stats    = firstMatch['Total Minions Killed'].describe()
 #=======================================================#
-from colorama import Fore, Back, Style
+
 def killsStats():
     if foodtanariKills > kill_stats['mean']:
         return("your kills score {} is above average {}".format(foodtanariKills,kill_stats['mean']))
