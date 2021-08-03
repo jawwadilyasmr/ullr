@@ -40,14 +40,6 @@ jupyterlab==2.2.6
 lazy-object-proxy==1.4.3
 libarchive-c==2.9
 locket==0.2.0
-MarkupSafe==1.1.1
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-mock==4.0.2
-mpmath==1.1.0
-msgpack==1.0.0
-multipledispatch==0.6.0
 nb-conda==2.2.1
 numexpr==2.7.1
 packaging==20.4
@@ -60,7 +52,6 @@ pyflakes==2.2.0
 pyodbc===4.0.0-unsupported
 pyparsing==2.4.7
 PySocks==1.7.1
-pytest==0.0.0
 python-dateutil==2.8.1
 python-dotenv==0.15.0
 python-snappy==0.5.4
