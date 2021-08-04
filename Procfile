@@ -1,2 +1,3 @@
-web: gunicorn visualization:app
+web:gunicorn visualization:app
+heroku ps:scale web=1
 
