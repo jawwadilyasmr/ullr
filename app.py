@@ -14,7 +14,7 @@ kda=("{}/{}/{}".format(foodtanariKills,foodtanariDeaths,foodtanariAssists))
 overall_kda=("{}/{}/{}".format(overall_foodtanariKills,overall_foodtanariDeaths,overall_foodtanariAssists))
 
 @app.route('/', methods=("POST", "GET"))
-def home():
+def index():
     
     return render_template('home.html',
                             plt_pieGold=plt_pieGold, 
