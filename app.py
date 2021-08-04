@@ -7,12 +7,6 @@ import os
 import numpy as np
 import json
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
-
-from django.core.wsgi import get_wsgi_application
-
-application = get_wsgi_application()
-
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path='/static')
 
