@@ -9,6 +9,7 @@ import json
 
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path='/static')
+server = app.server
 
 kda=("{}/{}/{}".format(foodtanariKills,foodtanariDeaths,foodtanariAssists))
 overall_kda=("{}/{}/{}".format(overall_foodtanariKills,overall_foodtanariDeaths,overall_foodtanariAssists))
